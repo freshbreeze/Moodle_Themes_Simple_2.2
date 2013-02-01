@@ -1,0 +1,877 @@
+/************************** Common **************************/
+body{
+    font-size: 12px;
+    margin-top: 22px;
+}
+a:hover{
+    text-decoration: underline !important;
+}
+th {
+    text-align: left;
+}
+hr{
+    height: 1px !important;
+    color: #cccccc !important;
+    background-color: #cccccc !important;
+    border: 0 !important;
+}
+.block{
+    border-top-width: 0;
+}
+
+
+/************************** Header **************************/
+.block .header{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 0;
+    font-size: 1em;
+}
+.block .header h2{
+    margin: 0;
+    font-size: 1em;
+}
+h2.headingblock{
+    font-size: 1em;
+    margin: 0;
+    border: 0;
+}
+/** .header class exists in head and content **/
+.header{
+    color: #FFFFFF;
+    background-image: none;
+    background-color: #0164A7 !important;
+}
+/* no color on startpage */
+#page-front-right .header{
+    background-color: transparent !important;
+}
+.header a{
+    color: #FFFFFF !important;
+}
+th.header a{
+    border-bottom: 1px dotted #FFFFFF;
+}
+#show_header{
+    display: none;
+}
+#page-header{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    border: 0 !important;
+    width: 100% !important;
+}
+#page-header-top-left{
+    float: left;
+    width: 202px;
+    margin-left: 7px;
+    font-size: 12px;
+}
+#page-header-top-middle{
+    float: left;
+    width: 160px;
+    font-size: 12px;
+}
+#page-header-top-right{
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+}
+#page-header-top-left, #page-header-top-middle, #page-header-top-right{
+    padding-bottom: 18px;
+}
+#page-header-middle-left{
+    float: left;
+    width: 200px;
+    min-height: 68px;
+    background-color: #fafafa;
+    margin-left: 10px;
+}
+#page-header-middle-right{
+    min-height: 68px;
+    background-color: #0164a7;
+    margin-left: 210px;
+    margin-right: 10px;
+}
+#page-header-middle-right h1{
+    margin: 0;
+    padding: 8px 8px 8px 6px;
+    color: #FFFFFF;
+    font-size: 150%;
+}
+#page-header-middle-right h1.page-front{
+    padding-left: 17px;
+}
+
+/************************** Frontpage **************************/
+#page-front-left{
+    float: left;
+    width: 180px;
+    margin-left: -100%;
+    padding: 0 0 0 10px;
+}
+#page-front-right{
+    overflow:hidden;
+    margin-left:191px;
+}
+#page-front{
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+}
+#page-front-wrapper{
+    float: left;
+    width: 100%;
+}
+#page-front-right .block{
+    float: left;
+    border-top-width: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 19px 19px;
+    height: 18.2em;
+    width: 18.2em;
+    /*height: 220px;
+    width: 220px;*/
+}
+#page-front-right .block .no-overflow{
+    padding: 1.3em 1.4em 0 1.4em !important;
+    margin: 0;
+}
+#page-front-right .block ul.no-overflow{
+    margin: 0;
+}
+#page-front-right .block ul li{
+    padding: 0 0 8px 0;
+    margin: 0;
+    border: 0;
+}
+#page-front-right .block .content img{
+    width: 15.3em;
+}
+#page-front-right .block .content p span{
+    margin-bottom: -9px;
+    font-weight: bold;
+    display: block;
+}
+/*** only IE7 ***/
+* + html #page-front-right .block .header h2{
+    padding: 0 0 10px 0;  
+}
+#page-front-right .block ul li{
+    list-style: none;
+}
+#page-front-right .block .header{
+    color: #000000;
+    background-color: #fafafa;
+    padding: 1.3em 1.4em 0 1.4em !important;
+    margin: 0 0 -0.8em 0;
+}
+#page-front-right .block .footer{
+    padding: 0.5em 1.4em 0 1.4em !important;
+    margin: 0;
+}
+#page-front-right .block .block_action{
+    display: none;
+}
+#page-front-right .block .list li{
+   font-size: 1em;
+}
+
+#page-front-left img.icon{
+    height: 11px;
+    width: 11px;
+}
+.navbar{
+    margin: 0.7em 5px 0.6em 5px;
+}
+.navbar, .navbar .breadcrumb{
+    background: none;
+    border: 0 !important;
+}
+#TOOLREF{
+    margin: 0;
+    padding: 0;
+}
+#TOOLREF li{
+    border-right: 1px solid #4C4C4C;
+    padding: 0 0.1875em 0 0.1875em;
+    height: 1em;
+    list-style-type: none;
+    float: left;
+}
+#TOOLREF li a{
+    display: block;
+}
+#TOOLREF li.lastItem {
+    border-right: none;
+}
+
+
+/************************** Slider **************************/
+#slider_value{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 1.5em;
+    background-color: #fafafa;
+}
+.yui3-skin-sam .yui3-slider-x .yui3-slider-rail,
+.yui3-skin-sam .yui3-slider-x .yui3-slider-rail-cap-left,
+.yui3-skin-sam .yui3-slider-x .yui3-slider-rail-cap-right {
+    background-image: url([[pix:theme|slider_rail]]) !important;
+    background-repeat: repeat-x;
+    vertical-align: top !important;
+    height: 1em !important;
+    /* alternate: rail-x-lines.png */
+}
+#save_fontsize, #save_default{
+    font-size: 12px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: #0164A7;
+    background: #0164A7;
+    color: #FFFFFF;
+    padding: 0px 10px 0px 10px;
+    margin-right: 4px;
+    top:0;
+}
+#save_buttons{
+    display: none;
+    position: absolute;
+    top: -20px;
+    font-size: 12px;
+}
+.yui3-slider-thumb-shadow{
+    display: none;
+}
+
+/************************** AAI Login (only for Swiss Universities relevant) **************************/
+#page-header-top-right-front .logininfo{
+    float: left;
+    background-color: #fafafa;
+    display:block;
+    border: 1px solid black !important;
+    
+}
+#IdPList{
+    background-color: #fafafa;
+}
+#wayf_logo_div, #wayf_intro_label{
+    display: none;
+    background-color: #fafafa;
+}
+#wayf_div,#user_idp {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 1px !important;
+}
+#user_idp{
+    float: left;
+    width: 155px !important;
+    font-size: 12px;
+    margin-top: 1px !important;
+    vertical-align: top !important;
+    background-color: #fafafa;
+    border: 1px solid #dddddd !important;
+}
+/*** only IE7 ***/
+* + html #page-header-top-right{
+    width: 236px;
+}
+#wayf_submit_button {
+    font-size: 10px !important;
+    margin: 0 0 0 4px !important;
+    padding: -2px !important;
+    height: 20px !important;
+    vertical-align: top !important;
+}
+
+
+/************************** Icons **************************/
+.moveto{
+    padding-left: 3px;
+    color: #FFFFFF;
+}
+
+/************************** Navigation left **************************/
+.tree_item{
+    overflow: hidden;
+}
+
+/************************** Block right **************************/
+.filters{
+    font-size: 9px;
+}
+.fd, .info, .searchform, .block_quiz_results, .newlink {
+    text-align: left !important;
+}
+
+/************************** Content **************************/
+#maincontent{
+    height:0;
+}
+.course-content ul.topics li.section .content, .course-content ul.weeks li.section .content{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.course-content ul.topics li.section .left, .course-content ul.weeks li.section .left{
+    width:auto;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+.course-content ul.topics li.section .left{
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    background-color: transparent;
+    color: #666;
+}
+/* no formating */
+.course-content ul.topics li.section .content .summary .no-overflow .left,
+li#section-0 .left,
+li.section-0 .left{
+    background-color: #fafafa !important;
+    border:none !important;
+}
+#section-0 .left{
+    background-color: #fafafa;
+    border: none;
+}
+.path-course-view .weeks .current, .path-course-view .topics .current, .path-course-view .current td.side{
+    background-color: #CCCCCC;
+}
+.path-course-view .weeks .hidden, .path-course-view .topics .hidden, .path-course-view .hidden td.side{
+    background-color: #EEEEEE;
+}
+ul{
+    margin-left: 1.3em;
+}
+ol.section, ul.section, dl.section{
+    margin-left: 0;
+}
+#page-site-index ol, #page-site-index ul, #page-site-index dl{
+    margin-left: 0;
+}
+.book_content ul,.generalbox ul{
+    margin-left: 2em;
+}
+.current, .path-calendar .maincalendar .filters table{
+    background-color: #fafafa;
+}
+#page-mod-forum-view .forumheaderlist .discussion .starter, #page-mod-forum-view .forumaddnew, .categorypicker {
+    text-align: left;
+    
+}
+.path-admin-roles .buttons .singlebutton, #page-admin-course-index .buttons .singlebutton, #page-admin-course-category .buttons .singlebutton {
+    padding: 0;
+}
+.buttons .singlebutton input {
+    margin: 10px 5px 10px 0;
+}
+#coursesearchbox{
+    max-width: 110px;
+}
+.glossarypost .no-overflow{
+    overflow: visible !important;
+}
+/* IE7 + IE8 Fix */
+a.dimmed, a.dimmed:link, a.dimmed:visited, a.dimmed_text, a.dimmed_text:link, a.dimmed_text:visited, .dimmed_text, .dimmed_text a, .dimmed_text a:link, .dimmed_text a:visited, .usersuspended, .usersuspended a, .usersuspended a:link, .usersuspended a:visited, .dimmed_category, .dimmed_category a {
+    zoom: 1;
+}
+
+/************************** Dock **************************/
+#dock, #dock .dockeditem .dockedtitle{
+    background-image: none;
+    background-color: #fcfcfc;
+    border-color: #DDDDDD;
+}
+/** For the panel the docked blocks are shown in */
+#dockeditempanel .dockeditempanel_content {border-color: #AAA;}
+#dockeditempanel .dockeditempanel_hd {border-bottom-color: #AAA; padding: 3px 5px; background-color: #0164a7;}
+#dockeditempanel .dockeditempanel_hd h2 {font-size: 80%; color: #FFF;}
+
+/************************** Content Header Title Bar **************************/
+h2.main{
+    font-size: 1.1em;
+    margin: 0;
+    background-color: #0164A7;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+h2.main a{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/************************** Navigation **************************/
+#coursesearch, #coursesearch2{
+    margin-top: 1px;
+    margin-left: 3px;
+    text-align: left;
+}
+/** User **/
+.initialbar {
+    text-align: left;
+}
+.initialbar a{
+    padding-left: 2px;
+}
+.adminsearchform #adminsearchquery{
+    width: 7em !important;
+}
+.block .footer {
+    text-align: left !important;
+    /* padding-left:3px not nice in block right */
+    padding-left: 0 !important;
+}
+/** Blog **/
+.addbloglink {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.comment-list li{
+    background-color: #fafafa;
+    border: 1px solid #dddddd;
+}
+.blog_entry .audience,.forumpost .options .commands, .forumpost .content .attachments, .forumpost .options .footer, .forumpost .options .link, #page-tag-index .moreblogs, .user-box, #tag-search-box {
+    text-align: left;
+}
+#page-blog-index .topic{
+    width: 100%;
+}
+#page-blog-index .picture, #page-blog-index .topic{
+    background-color: #fafafa;
+}
+#page-blog-index .commands{
+    font-style: 0.8em;
+}
+/** Tags **/
+.tag-heading, #tag-management-box, .tag-management-form{
+    text-align: left !important;
+    width: auto !important;
+}
+.tag-heading, .managelink{
+    margin-bottom: 15px !important;
+}
+#tagblogentries{
+    list-style: none;
+}
+#tag-user-table, #tag-description, #tag-blogs{
+    width: auto;
+}
+#big-tag-cloud-box {
+    width: auto;
+}
+.block_blog_tags .default {
+    font-size: 1em !important;
+    font-weight: normal !important;
+}
+/** Notes **/
+.path-notes .generalbox {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+}
+/** Calendar **/
+.calendar_event_global {
+    background-color: #a3d7ff;
+}
+.calendar_event_group{
+    background-color: #b3dabb;
+}
+.calendar_event_course {
+    background-color: #d2d2d2;
+}
+.calendar_event_user {
+    background-color: #e6d7a1;
+}
+.calendartable .today, .calendartable .hasevent {
+    border-width: 1px;
+    border-color: #aaaaaa;
+}
+table.calendartable{
+    table-layout: fixed;
+}
+.path-calendar .maincalendar .bottom {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+/** Reports **/
+.path-report-outline .loginfo, .path-mod-forum .forumnodiscuss, #page-report #region-main p, #page-report-log-index #region-main .info, #page-report-loglive-index #region-main .info, #page-report-stats-index #region-main .graph {
+    text-align: left;
+    margin: 15px 0 15px 0;    
+}
+#outlinetable th{
+    padding: 5px;
+}
+#page-report .logselectform, #page-report .participationselectform, #page-report-log-index .logselectform, #page-report-participation-index .participationselectform {
+    text-align: left;
+}
+#page-report-participation-index .participationselectform {
+    margin:-5px 0 15px 0;
+}
+#page-report-participation-index .participationselectform label {
+    margin-left: 0;
+    margin-right: 2px;
+}
+#page-report-participation-index .participationselectform select {
+    margin-right: 10px;
+}
+#participationreport {
+    text-align: left;
+}
+/** Kursbereiche **/
+.nav_kursbereiche a{
+    margin-left: 22px;
+    display: block;
+}
+.nav_kursbereiche a img{
+    margin-left: -18px;
+}
+/** Messages **/
+#page-mod-forum-view #intro.generalbox {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+    width: auto;
+    margin-top: 0;
+}
+
+/************************** Settings **************************/
+/** My Profil **/
+#page-admin-roles-usersroles li{
+    list-style: none;
+}
+/*** Activity ***/
+.boxaligncenter {
+    margin-left: 0;
+    margin-right: 0;
+}
+.generaltable{
+    width: 99.9% !important;
+}
+.errorbox,.continuebutton{
+    margin-left: 0;
+    margin-right: 0;
+    width:auto;
+    text-align: left;
+}
+.errorbox{
+    background-color: red;
+    margin-top:0;
+}
+.errorcode,.errorcode a, .errormessage{
+    font-size: 1em;
+    font-style: normal;
+    color: #FFFFFF;
+}
+.errormessage{
+    font-size:1.5em;
+}
+/** Journal **/
+.singlebutton,.lastedit{
+    text-align: left !important;
+}
+.singlebutton{
+    padding-bottom: 10px;
+}
+.mform .fdescription.required{
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+/** Lessons **/
+.path-mod-lesson .firstpageoptions {
+    margin-left: 0;
+}
+#page-mod-lesson-essay .buttons, .path-mod-lesson .center, .path-mod-lesson .firstpageoptions, .path-mod-lesson .clock .content, .path-mod-lesson .centerpadded, #page-mod-lesson-view .password-form, .path-mod-lesson .edit_pages_box .addlinks{
+    text-align: left;
+}
+.tabrow1{
+    margin-top: 2px !important;
+}
+/** Quize **/
+#page-mod-quiz-view .quizinfo, #page-mod-quiz-view #page .quizgradefeedback, #page-mod-quiz-view #page .quizattempt,.notifyproblem {
+    text-align: left;
+    padding-left: 0;
+}
+#page-mod-quiz-edit .questionbankwindow div.header {
+    background-color: #0164a7;
+}
+#add, #remove, .centerpara, .mdl-align,#page-mod-quiz-report .toggleincludeauto {
+    text-align: left;
+}
+#page-mod-quiz-view #feedback.generalbox {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+    width: auto;  
+}
+#page-mod-quiz-edit div.quizcontents{
+    width: 62%;
+}
+.questionbankwindow.block {
+    position: absolute;
+}
+#page-mod-quiz-edit .statusbar{
+    margin-top: 10px;
+}
+.que .incorrect, .que .correct,.que .notanswered, select, option, lable, selected{
+    color: #000000 !important;
+}
+/** Questionnaire **/
+.questioncell{
+    text-align: right;
+}
+#notice.generalbox {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+}
+#page-mod-survey-report .reportsummary, #page-mod-survey-report .studentreport, #page-mod-survey-report .reportbuttons, #page-mod-survey-report .centerpara {
+    text-align: left;
+}
+/** Wiki **/
+.wiki_headingtitle {
+    text-align: left;
+}
+.wiki-toc{
+    margin: 0 0 20px 0;
+}
+.midpad {
+    text-align: left;
+}
+.wiki_editor{
+    margin-left: 0;
+    text-align: left; 
+}
+.wiki-toc-title {
+    text-align: left;
+}
+/** Workshop **/
+.path-mod-workshop .userplan th {
+    color: #FFFFFF;
+}
+.path-mod-workshop .userplan td {
+    background-color: #F5F5F5;
+}
+.path-mod-workshop .userplan th.active,.path-mod-workshop .userplan td.active {
+    background-color: #EEEEEE;
+}
+.path-mod-workshop .userplan{
+    width: auto;
+    font-size: 100%;
+}
+.path-mod-workshop .grading-report{
+    width:100%;
+}
+table.userplan{
+    table-layout: fixed;
+}
+.path-mod-workshop .userplan th.active {
+    font-size: 110%;
+}
+.path-mod-workshop .collapsibleregioncaption {
+    font-size: 100%;
+    font-weight: bold;
+}
+/** Choise **/
+.path-mod-choice .names{
+    width: auto;
+}
+.path-mod-choice .results .data{
+    white-space: normal;
+}
+.path-mod-choice .names.results .user, .path-mod-choice #yourselection{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/** Book **/
+.mod_book .navtop, .mod_book .navbottom {
+    text-align: left;
+}
+.mod_book img.bigicon{
+    border: 1px solid #dddddd;
+    margin: 0 10px 0 0;
+}
+/** Page **/
+.path-mod-page .modified{
+    font-size: 0.8em;
+    font-style: none;
+}
+/** URL **/
+.mod_introbox {
+    width: auto;
+}
+/** Folder **/
+#page-mod-folder-view .foldertree{
+    width: auto;
+}
+/** Glossary **/
+.glossarysearchbox, .path-mod-glossary .glossarydisplay,.path-mod-glossary .glossaryexplain, #page-mod-glossary-view .glossaryaddentry, #page-mod-glossary-import table.glossaryimportexport{
+    text-align: left !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    width: 99.9%;
+}
+.glossaryexplain{
+    padding-left: 14px !important;
+    padding-top: 5px !important;
+}
+#page-mod-glossary-showentry .glossarypost h3{
+    font-size: 110%;
+    font-weight: bold;
+    padding-bottom: 0.4em;
+}
+.boxwidthwide{
+    width: auto;
+}
+.unlist, .unlist li, .inline-list, .inline-list li, .block .list, .block .list li, .sitetopic .section li.activity, .course-content .section li.activity, .tabtree li {
+    margin-bottom: 2px;
+}
+#page-mod-questionnaire-view .surveyPage {
+    border-bottom-color:#aaaaaa !important;
+    background-color: #FAFAFA !important;
+}
+.reportQuestionNumber{
+    width: 20px !important;
+}
+/* Feedback */
+h1.main, h2.main, h3.main, h4.main, h5.main, h6.main {
+    text-align: left;
+}
+#page-mod-assignment-view .feedback {
+    margin-left: 0;
+    margin-right: 10px;
+}
+/* Chat */
+#page-mod-chat-gui_basic-index #region-main {
+    margin-left: 1px !important;
+}
+.tabtree ul {
+    text-align: left;
+}
+#page-mod-chat-view #enterlink {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    width: auto;
+}
+#intro.generalbox{
+    width: auto;
+}
+#page-mod-questionnaire-questions div.qcontainer div.fstatic, #page-mod-questionnaire-questions div.qcontainer div.qheader {
+    border-bottom-color: #aaaaaa;
+    border-top-color: #aaaaaa;
+    background-color: #FAFAFA;
+}
+#page-mod-questionnaire-questions div.qcontainer div.qheader{
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+/* Table */
+.path-mod-data .fieldadd, .path-mod-data .sortdefault, .path-mod-data .defaulttemplate, #page-mod-data-view .datapreferences, #page-mod-data-preset .presetmapping {
+    text-align: left;
+}
+.paging {
+    text-align: left;
+}
+
+
+/************************** Common 2 **************************/
+#helppopupbox ul{
+    padding-left: 13px;
+}
+.cleaner{
+    vertical-align: top;
+    clear: both;
+    height: 0.1px;
+    font-size: 0.1px;
+    margin: 0;
+    border: 0px none;
+    padding: 0;
+    overflow: hidden;
+}
+.inv{
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	margin-bottom: -0.2em;
+	display: inline;
+}
+.searchform button {
+    font-size: 80%;
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 2em !important;
+}
+
+.errorcode a{
+    color: #FFFFFF !important;
+}
+.buttons {
+    text-align: left !important;
+}
+/* border for <table class="border"> */
+table.border td {
+    border: 1px solid #aaaaaa;
+    margin: 0;
+    padding: 3px;
+}
+table.border{
+    border-collapse: collapse;
+}
+
+/************************** My Home Page **************************/
+#page-my-index #region-main .block {
+    border-top-width: 1px;
+    margin-bottom: 19px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    overflow: auto;
+    padding: 0;
+}
+#page-my-index .block_rss_client .list li{
+    font-size: 1em;
+}
+#page-my-index .list_block a:visited, #page-my-index .block_rss_client a:visited {
+    color: #4488b6;
+}
+
+/************************** Colors for all Departements **************************/
+/* Left */
+a:link, a:hover, a:visited, a:active, span.flagged-tag a{
+    color: #0164A7;
+}
+.box span.flagged-tag{
+    color: #0164A7 !important;
+}
+/* Tags */
+.tag-heading span.flagged-tag, .tag-heading span.flagged-tag a {
+    color: #FFFFFF;
+}
+span.flagged-tag {
+    /* not withe because block right */
+    color: #0164A7;
+}
+
+/************************** Scale medias on for small screens **************************/
+@media screen and (max-width:800px) {
+img, object, video  {
+    max-width: 100%;
+    height: auto;
+}
+}
