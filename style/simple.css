@@ -617,9 +617,6 @@ table.calendartable{
 #page-mod-quiz-edit div.quizcontents{
     width: 62%;
 }
-.questionbankwindow.block {
-    position: absolute;
-}
 #page-mod-quiz-edit .statusbar{
     margin-top: 10px;
 }
