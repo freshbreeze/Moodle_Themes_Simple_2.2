@@ -51,7 +51,7 @@ if (Y.one('#slider_value')) {
         min    : 10,
         max    : 18,
         value  : cookie_fontsize,
-        thumbUrl : '/theme/image.php?theme=simple&amp;image=slider&amp;component=theme'
+        thumbUrl : M.cfg.wwwroot+'/theme/image.php?theme=simple&amp;image=slider&amp;component=theme'
     });
     // Link the input value to the Slider
     xInput = Y.one( "#slider_value" );

@@ -38,8 +38,6 @@ $string['choosereadme'] = '<div class="clearfix">
     <li>The front-page design uses blocks in the content area and displaying them as boxes</li>
     <li>Changeable columns and height in "My home" for each user</li>
     <li>Changeable font size for each user</li>
-    <li></li>
-    <li></li>
     </ul>    
 </div>
 ';
